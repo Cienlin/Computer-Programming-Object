@@ -12,18 +12,20 @@
 注意!.html文件須放在templates資料夾中，.css,.js,圖片均須放至static資料夾中
 
 首頁
-![螢幕擷取畫面 (24)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/372fbad5-106a-4c9d-b7f9-b51f3a437ce6)
+![螢幕擷取畫面 (24)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/b953b12e-50bf-413a-bd55-b0aa80076414)
 
 分類查詢結果
-![螢幕擷取畫面 (25)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/c58f33e4-2ad6-4f3c-918f-9e10562628f4)
+![螢幕擷取畫面 (25)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/6da0f003-18dc-4258-9823-03069278653a)
 
 指定電影查詢結果
-![螢幕擷取畫面 (26)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/c04c3675-e768-4d0e-8b23-e220fc6b2786)
+![螢幕擷取畫面 (26)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/fd0a5be3-fd15-463c-8327-8c772c56ef1e)
 
 Top 250結果，並以50筆資料顯示分頁
-![螢幕擷取畫面 (29)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/4ec94dcc-c694-48e1-9a5a-73e4ee21bc61)
-![螢幕擷取畫面 (30)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/05e49b8e-5bf5-45c4-b3a9-df0363a5474f)
+![螢幕擷取畫面 (29)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/3304fdbf-9054-432e-8d56-a5717c964b6a)
+![螢幕擷取畫面 (30)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/79144d65-19dd-4796-aa60-1ee8391d173f)
 
 the Numbers表格及繪圖
-![螢幕擷取畫面 (27)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/cad7dfb2-6689-4925-9c65-2f4dc5b22b44)
-![螢幕擷取畫面 (28)](https://github.com/Cienlin/Computer-Programming-object/assets/102715193/476901fc-bc12-4af0-b419-65795e605d66)
+![螢幕擷取畫面 (27)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/8464685c-6c06-46f6-ab35-f15e6c40cab4)
+![螢幕擷取畫面 (28)](https://github.com/Cienlin/Computer-Programming-Object/assets/102715193/cb8519d0-a4af-4c10-bf54-586cc9062441)
+
+
