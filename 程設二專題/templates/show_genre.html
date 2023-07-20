@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電影分類查詢</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/show_genre.css')}}">
+</head>
+<body>
+    <div class="genre-page">
+        <div class="genre-name">
+            <h1>分類:{{genre_name}}</h1>
+        </div>
+        <article class="genre-movies-content">
+            <ol>
+                {%for genre_data in genre_datas%}
+                <li>
+                    <h2>電影名稱: {{genre_data.title}}</h2>
+                </li>
+                <p><span>上映時間: </span>{{genre_data.years}}</p>
+                <p><span>片長: </span>{{genre_data.runtime}}</p>
+                <p><span>評分: </span>{{genre_data.rate}}</p>
+                <p><span>電影介紹: </span>{{genre_data.intro}}</p>
+                <p><span>導演及主演明星: </span>{{genre_data.stars}}</p>
+                {%endfor%}
+            </ol>
+        </article>
+        <div class="go-back-to-index">
+            <a href="/back_to_index">回首頁</a>
+        </div>
+    </div>
+    
+    
+    
+
+    
+</body>
+</html>

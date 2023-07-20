@@ -1,0 +1,90 @@
+body{
+    background: linear-gradient(to right,silver,antiquewhite);
+}
+/*--------------------------------------------*/
+.title{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+/*--------------------------------------------*/
+article{
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 40px;
+}
+/*--------------------------------------------*/
+.page-button{
+  display: flex;
+  justify-content: center;
+}
+/*--------------------------------------------*/
+.pagination {    
+  display: flex;
+  justify-content: center; 
+  width: 150%;
+  margin-top: 25px;
+  padding-bottom: 20px;
+}
+  
+.pagination .box {   
+  text-align: center;
+  text-decoration: none;
+  margin-right: 5px;
+  padding: 10px 13px;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+  
+.box {     
+  background: #222;
+  color: #fff;
+}
+.box:hover{
+  background: white;
+  color: #222;
+}
+  
+.pagination .current {  
+  background: #fff;
+  color: #222;
+  font-weight: bold;
+}
+  
+  
+  
+.pagination .arrow {  
+  background: #d25400;
+  color: #fff;
+  font-weight: bold;
+}
+.pagination .arrow:hover{
+  background: white;
+  color: #d25400;
+  font-weight: bold;
+}
+/*--------------------------------------------*/
+.go-back-to-index .a{
+  text-decoration: none;
+  color:darkmagenta;
+  font-size: x-large;
+  font-weight: bolder;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  
+}
+.go-back-to-index .a:hover{
+  text-decoration: underline;
+  color: cornflowerblue;
+}
+.go-back-to-index{
+  display: flex;
+  justify-content: center;
+}
+/*--------------------------------------------*/
+span{
+  font-weight: bolder;
+}

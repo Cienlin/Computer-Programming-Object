@@ -1,0 +1,38 @@
+body{
+    background: linear-gradient(to right,silver,antiquewhite);
+}
+/*--------------------------------------------*/
+.genre-name{
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+}
+/*--------------------------------------------*/
+article{
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    padding: 40px;
+}
+/*--------------------------------------------*/
+a{
+    text-decoration: none;
+    color:darkmagenta;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 15px;
+}
+a:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+/*--------------------------------------------*/
+.go-back-to-index{
+    display: flex;
+    justify-content: center;
+}
+/*--------------------------------------------*/
+span{
+    font-weight: bolder;
+}

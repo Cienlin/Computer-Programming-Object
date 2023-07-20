@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜尋電影</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/specific_movie.css')}}">
+</head>
+<body>
+    <div class="movie-info">
+        <div class="movie-name">
+            <h1>電影名稱: {{movie_data.title}}</h1>
+        </div>
+        <article class="movie-content">
+            <ul>
+                <li><p><span>上映時間: </span>{{movie_data.years}}</p></li>
+                <li><p><span>片長: </span>{{movie_data.runtime}}</p></li>
+                <li><p><span>評分: </span>{{movie_data.rate}}</p></li>
+                <li><p><span>電影介紹: </span>{{movie_data.intro}}</p></li>
+                <li><p><span>導演及主演明星: </span>{{movie_data.stars}}</p></li>
+            </ul>
+        </article>
+        <div class="go-back-to-index">
+            <a href="/back_to_index">回首頁</a>
+        </div>
+    </div>
+</body>
+</html>

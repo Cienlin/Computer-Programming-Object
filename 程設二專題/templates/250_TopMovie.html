@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 250 Movies</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/250_topMovie.css')}}">
+</head>
+<body>
+    <div>
+        <div class="title">
+            <h1>Top 250 Movies</h1>
+        </div>
+        <article>
+            <ul>
+                {%for data in datas250.items %}
+                <li>
+                    <h2 class="movie-name">{{data.movie}}</h2>
+                </li>
+                <p><span>上映時間: </span>{{data.year}}</p>
+                <p><span>片長: </span>{{data.runtime}}</p>
+                <p><span>評分: </span>{{data.rate}}</p>
+                <p><span>故事介紹: </span>{{data.intro}}</p>
+                <p><span>導演: </span>{{data.director}}</p>
+                <p><span>主要演員: </span>{{data.stars}}</p>
+                {%endfor%}
+            </ul>
+        </article>
+        <div class="page-button">
+            <nav class="pagination">
+                {% if datas250.has_prev %}
+                    <a href="/top_250_list/{{ datas250.prev_num }}" class="box arrow">&lt;</a>
+                {% endif %}
+
+                {% for num in datas250.iter_pages() %}
+                    {% if num %}
+                        {% if datas250.page == num %}
+                            <span class="box current">{{ num }}</span>
+                        {% else %}
+                            <a href="/top_250_list/{{ num }}" class="box">{{ num }}</a>
+                        {% endif %}
+                    {% else %}
+                        <span class="box dots">...</span>
+                    {% endif %}
+                {% endfor %}
+
+                {% if datas250.has_next %}
+                    <a href="/top_250_list/{{ datas250.next_num }}" class="box arrow">&gt;</a>
+                {% endif %}
+            </nav>
+        </div>
+        
+        <div class="go-back-to-index">
+            <a  href="/back_to_index">回首頁</a>
+        </div>
+    </div>
+    
+</body>
+</html>

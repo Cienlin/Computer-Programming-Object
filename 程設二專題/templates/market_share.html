@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Share</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/market_share.css')}}">
+</head>
+<body>
+    <div class="market-share-page">
+        <table border="1">
+            <caption>Genres Market Share</caption>
+            <thead>
+                <tr>
+                  <th></th>
+                  {% for genre_name in genre_datas %}
+                    <th>{{ genre_name }}</th>
+                  {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for year in range(1995, 2024) %}
+                  <tr>
+                    <td>{{ year }}</td>
+                    {% for genre_name in genre_datas %}
+                      {% if all_datas[genre_name] and year|string in all_datas[genre_name] %}
+                        <td>{{ all_datas[genre_name][year|string] }}</td>
+                      {% else %}
+                        <td></td>
+                      {% endif %}
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        <div>
+            <img src="{{url_for('static',filename = 'photo/market_share_img.png')}}" alt="Can't find the image">
+        </div>
+        <div class="go-back-to-index">
+            <a href="/back_to_index">回首頁</a>
+        </div>
+    </div>
+</body>
+</html>

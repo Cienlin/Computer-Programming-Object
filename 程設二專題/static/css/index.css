@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/earlyaccess/cwtexyen.css');
+
+body{
+    font-family: 'cwTeXYen',sans-serif;
+    background: linear-gradient(to right,silver,antiquewhite);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+/*--------------------------------------------*/
+.front_page{
+    width: 450px;
+    background: rgba(255, 255, 255, .5);
+    padding: 4rem;
+    border-radius: 15px;
+    position: relative;
+}
+.front_page::before{
+    content: "";
+    position: absolute;
+    background: rgba(255, 255, 255, .15);
+    inset: 0;
+    transform: rotate(-10deg);
+    z-index: -1;
+}
+/*--------------------------------------------*/
+.web-name{
+    font-weight: bolder;
+    font-size:xx-large;
+    justify-content: center;
+    display: flex;
+
+}
+/*--------------------------------------------*/
+.title,
+.top-250,
+.genres-market-share,
+.genre-search,
+.specific-movie-search{
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*--------------------------------------------*/
+a{
+    text-decoration: none;
+    color:darkmagenta;
+}
+a:hover{
+    text-decoration: underline;
+    color: cornflowerblue;
+}
+/*--------------------------------------------*/
+label{
+    font-size: large;
+    font-weight: bold;
+}
+/*--------------------------------------------*/
+.genre-search-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.genre-search-form input{
+    font-size:15px ;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    text-indent: 15px;
+    color: black;
+    background: rgba(255, 255, 255, .3);
+}
+.genre-search-form input:focus{
+    background: white;
+}
+/*--------------------------------------------*/
+.specific-movie-search-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+.specific-movie-search-form input{
+    font-size:15px ;
+    font-weight: bolder;
+    padding: 5px;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    text-indent: 15px;
+    color: black;
+    background: rgba(255, 255, 255, .3);
+}
+.specific-movie-search-form input:focus{
+    background: white;
+}
+/*--------------------------------------------*/
+button{
+    border: 0;
+    border-radius: 20px;
+    background-color: darkslategray;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    width: 50px;
+    height: 25px;
+    font-weight:bold;
+}
+button:hover{
+    background-color: #fff;
+    color: darkslategray;
+    border: darkslategray solid;
+}
+

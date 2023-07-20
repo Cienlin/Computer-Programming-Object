@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電影排名</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'css/index.css')}}">
+</head>
+<body>
+    
+    <div class="front_page">
+        <div class="title" >
+            <h1 class="web-name">電影排名</h1>
+        </div>
+        <div class="top-250">
+            <a href="/top_250_list">Top 250 Movies</a>
+        </div>
+        <div class="genres-market-share">
+            <a href="/market_share">Genres Market Share</a>
+        </div>
+        <div class="genre-sreach">
+            <form class="genre-search-form" method="post" action="{{url_for('genre')}}">
+                <div class="search-explaination">
+                    <label for="genre">輸入或選擇想查詢的電影類型 : </label>
+                </div>
+                <div class="search-item">
+                    <input list="Movies" name="genre">
+                    <datalist id="Movies">
+                        <option value="Action">Action</option>
+                        <option value="Adventure">Adventure</option>
+                        <option value="Animation">Animation</option>
+                        <option value="Biography">Biography</option>
+                        <option value="Comedy">Comedy</option>
+                        <option value="Crime">Crime</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Family">Family</option>
+                        <option value="Fantasy">Fantasy</option>
+                        <option value="Film-Noir">Film-Noir</option>
+                        <option value="History">History</option>
+                        <option value="Horror">Horror</option>
+                        <option value="Music">Music</option>
+                        <option value="Musical">Musical</option>
+                        <option value="Mystery">Mystery</option>
+                        <option value="Romance">Romance</option>
+                        <option value="Sci-Fi">Sci-Fi</option>
+                        <option value="Sport">Sport</option>
+                        <option value="Thriller">Thriller</option>
+                        <option value="War">War</option>
+                        <option value="Western">Western</option>
+                    </datalist>
+                    <button type="submit" href = '/genre'>Enter</button>
+                </div>
+            </form>
+        </div>
+        <div class="specific-movie-search">
+            <form class="specific-movie-search-form" method="post" action="{{url_for('specific_movie')}}">
+                <div>
+                    <label for="movieName">輸入想查詢的電影相關資訊:</label>
+                </div>
+                <div>
+                    <input type="text" name="movieName" placeholder="需輸入完整電影名稱">
+                    <button type="submit" href = '/specific_movie'>Enter</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
